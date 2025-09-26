@@ -1,0 +1,8 @@
+1. Assignment
+    Sinh viên sẽ nộp sau khi Teams của Đại học cho phép tạo Assignment và tải files.    
+    Bài tập 1. Đăng ký tên miền id.vn (dành riêng cho sinh viên Việt Nam). 
+    Yêu cầu: upload ảnh chụp trang cấu hình tên miền tại website đơn vị cung cấp
+    Bài tập 2. Github. Yêu cầu: tạo một repo có tên "IT4409-20251" trên Github (public hoặc private).
+    Sau đó tạo commit và push một file có tên là MSSV.txt (thay MSSV bằng mã số sinh viên thật của bạn, file có nội dung bất kỳ). 
+    Upload ảnh chụp màn hình repo trên Github với các thao tác đã thực hiện.
+2. Slide Tuần 1: https://drive.google.com/drive/u/1/folders/1VjR3z4gcHbVkx1GdDKQokVeok81adrvC
