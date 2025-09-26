@@ -1,0 +1,3 @@
+•Ex1. Create a simple HTML page including basic tags
+•Ex2. Create a sample registration form
+•Ex3. Create a HTML page using semantic structure tags

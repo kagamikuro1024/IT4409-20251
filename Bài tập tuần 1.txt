@@ -6,3 +6,12 @@
     Sau đó tạo commit và push một file có tên là MSSV.txt (thay MSSV bằng mã số sinh viên thật của bạn, file có nội dung bất kỳ). 
     Upload ảnh chụp màn hình repo trên Github với các thao tác đã thực hiện.
 2. Slide Tuần 1: https://drive.google.com/drive/u/1/folders/1VjR3z4gcHbVkx1GdDKQokVeok81adrvC
+
+3. Link hướng dẫn
+Register a free domain name
+    •https://www.pavietnam.vn/vn/tin-tuc-uu-dai-so-huu-mien-phi-ten-mien-id-vn.html
+    •https://www.matbao.net/ten-mien/ten-mien-mien-phi.html
+Git - GitHub
+    •https://codelearn.io/sharing/git-github-tu-co-ban-den-nang-cao-p1
+    •https://docs.github.com/en/get-started/start-your-journey/about-github-and-git
+

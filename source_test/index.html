@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelNow - Đặt Tour Du Lịch Toàn Cầu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">TravelNow</a>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#home">Trang chủ</a></li>
+                    <li><a href="#destinations">Điểm đến</a></li>
+                    <li><a href="#tours">Các Tour</a></li>
+                    <li><a href="#booking">Booking</a></li>
+                    <li><a href="#contact">Liên hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Khám phá Thế giới Tuyệt vời!</h1>
+            <p>Hãy để chúng tôi đưa bạn đến những điểm đến trong mơ.</p>
+            <a href="#tours" class="cta-button">Khám phá ngay</a>
+        </div>
+    </section>
+
+    <section class="destinations" id="destinations">
+        <div class="container">
+            <h2>Điểm đến nổi bật</h2>
+            <div class="destination-grid">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1528127269322-539801943592?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Hoi An">
+                    <h3>Hội An, Việt Nam</h3>
+                    <p>Khám phá phố cổ rực rỡ đèn lồng.</p>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Paris">
+                    <h3>Paris, Pháp</h3>
+                    <p>Thành phố tình yêu và ánh sáng.</p>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1194&q=80" alt="Tokyo">
+                    <h3>Tokyo, Nhật Bản</h3>
+                    <p>Hòa mình vào nền văn hóa độc đáo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="booking-section" id="booking">
+        <div class="container">
+            <h2>Đặt Tour của bạn</h2>
+            <form id="bookingForm" class="booking-form">
+                <div class="form-group">
+                    <label for="destination">Điểm đến:</label>
+                    <select id="destination" name="destination" required>
+                        <option value="">Chọn điểm đến</option>
+                        <option value="HoiAn">Hội An, Việt Nam</option>
+                        <option value="Paris">Paris, Pháp</option>
+                        <option value="Tokyo">Tokyo, Nhật Bản</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="date">Ngày khởi hành:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="guests">Số người:</label>
+                    <input type="number" id="guests" name="guests" min="1" required>
+                </div>
+                <button type="submit" class="submit-button">Đặt Tour</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 TravelNow. Tất cả bản quyền.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
