@@ -52,6 +52,15 @@ body {
   justify-content: space-between;
   padding: 0.5% 10%;
 }
+
+/* Responsive cho navbar top */
+@media screen and (max-width: 768px) {
+  #navbar-top {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2% 5%;
+  }
+}
 #navbar .navbar-list {
   padding: 0.5% 10% !important;
 }
@@ -72,7 +81,28 @@ body {
   margin: 0;
   padding: 0;
   white-space: nowrap;
-  overflow-x: hidden;
+  overflow-x: auto;
+}
+
+/* Responsive cho navigation menu */
+@media screen and (max-width: 768px) {
+  .navbar-list ul {
+    white-space: normal;
+    overflow-x: visible;
+    flex-wrap: wrap;
+    display: flex;
+  }
+  
+  .navbar-list ul li {
+    float: none;
+    flex: 1 1 auto;
+    min-width: fit-content;
+  }
+  
+  .navbar-list ul li a {
+    padding: 1rem 0.5rem;
+    font-size: 0.9rem;
+  }
 }
 .navbar-list ul li {
   float: left;
@@ -97,6 +127,14 @@ body {
   color: rgb(192, 33, 53);
   padding: 0.8% 10%;
   font-size: medium;
+}
+
+/* Responsive cho current path */
+@media screen and (max-width: 768px) {
+  #navbar-current-path {
+    padding: 2% 5%;
+    font-size: small;
+  }
 }
 .box,
 .box-small {
@@ -135,6 +173,23 @@ body {
   font-weight: 400;
   /* text-align-last: justify; */
 }
+
+/* Responsive cho box title và description */
+@media screen and (max-width: 768px) {
+  .box-title {
+    font-size: 4vw;
+    white-space: normal;
+  }
+  
+  .box-des {
+    font-size: 3vw;
+  }
+  
+  .box-small {
+    height: auto;
+    min-height: 15vw;
+  }
+}
 .card {
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
@@ -154,6 +209,35 @@ body {
 .card-body ul li {
   margin-top: 0.65vw;
 }
+
+/* Responsive cho card content */
+@media screen and (max-width: 768px) {
+  .card-body {
+    padding: 2vw;
+  }
+  
+  .card-body ul li {
+    margin-top: 1vw;
+    font-size: 3.5vw;
+  }
+  
+  h4 {
+    font-size: large;
+  }
+  
+  .text-block-body div p {
+    margin-bottom: 1vw;
+    font-size: 3.2vw;
+  }
+  
+  /* Responsive cho profile image */
+  .profile-image-container {
+    top: 15vw !important;
+    left: 5vw !important;
+    width: 20vw !important;
+    height: 20vw !important;
+  }
+}
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
@@ -172,6 +256,16 @@ body {
   flex-direction: row;
   align-items: start;
   padding: 0.8% 10%;
+  gap: 1rem;
+}
+
+/* Responsive cho layout chính */
+@media screen and (max-width: 768px) {
+  .web-body {
+    flex-direction: column;
+    padding: 2% 5%;
+    gap: 1rem;
+  }
 }
 #card-user-info {
   grid-column: 1;
@@ -188,12 +282,47 @@ body {
   grid-row: 1 / span 2;
   width: 50vw;
 }
+
+/* Responsive cho cards */
+@media screen and (max-width: 768px) {
+  #card-user-info,
+  #card-more-info,
+  #card-management-info {
+    width: 100%;
+    grid-column: 1;
+  }
+  
+  #card-user-info {
+    grid-row: 1;
+  }
+  
+  #card-more-info {
+    grid-row: 2;
+  }
+  
+  #card-management-info {
+    grid-row: 3;
+  }
+}
 .text-block-body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 0vw 0.5vw;
   margin: 0 0;
+  flex-wrap: wrap;
+}
+
+/* Responsive cho text blocks */
+@media screen and (max-width: 768px) {
+  .text-block-body {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .text-block div {
+    white-space: normal;
+  }
 }
 .text-block-body div p {
   margin: 0;
@@ -210,4 +339,44 @@ body {
   background-size: 100%;
   background-position: bottom;
   height: 35vh;
+}
+
+/* Responsive cho charts và footer */
+@media screen and (max-width: 768px) {
+  #my-chart {
+    flex-direction: column !important;
+    padding: 0 5% !important;
+  }
+  
+  #chart-learning,
+  #chart-training {
+    width: 100% !important;
+    margin: 20px auto !important;
+  }
+  
+  #footer {
+    height: 20vh;
+    background-size: cover;
+  }
+}
+
+/* Responsive cho tablet */
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  .web-body {
+    padding: 1% 5%;
+  }
+  
+  #card-user-info,
+  #card-more-info {
+    width: 30vw;
+  }
+  
+  #card-management-info {
+    width: 60vw;
+  }
+  
+  .navbar-list ul li a {
+    padding: 0.8vw 1vw;
+    font-size: 0.9rem;
+  }
 }
